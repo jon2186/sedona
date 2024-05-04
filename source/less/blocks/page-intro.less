@@ -1,0 +1,139 @@
+.page-intro {
+  position: relative;
+  background-color: #fff;
+}
+
+.page-intro, .page-intro--photo {
+  padding: 20px 25px 24px;
+}
+
+.page-intro--form {
+  padding: 20px 20px 15px;
+}
+
+.page-intro--decorated::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  bottom: -17px;
+  width: 320px;
+  height: 37px;
+  background-image: url(../../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  z-index: 2;
+}
+
+.page-intro__header {
+  font-weight: 700;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.page-intro__content {
+  margin: 27px 0 0;
+  color: #333;
+  font-style: 14px;
+}
+
+.page-intro__content, .page-intro__header {
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-intro__content--form, .page-intro__content--photo {
+  padding: 0;
+  margin-top: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media(min-width: 768px) {
+  .page-intro {
+    padding: 30px 100px 40px;
+  }
+
+  .page-intro--decorated::after {
+    display: none;
+  }
+
+  .page-intro__header {
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .page-intro__header--large {
+    margin-top: 45px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .page-intro__content {
+    margin-top: 29px;
+    margin-bottom: 9px;
+  }
+
+  .page-intro__content br {
+    display: inline;
+  }
+
+  .page-intro__content--form {
+    margin-bottom: 9px;
+  }
+
+  .page-intro__content--form, .page-intro__content--photo {
+    padding: 0 45px;
+    margin-top: 31px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .page-intro {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 345px 20px;
+  }
+
+  .page-intro__header {
+    padding: 0 23px;
+    margin-top: 21px;
+  }
+
+  .page-intro__header--large {
+    margin-top: 82px;
+    margin-bottom: 30px;
+  }
+
+  .page-intro__content {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .page-intro__content--form {
+    margin: 0 0 5px;
+    padding: 0 33px;
+  }
+
+  .page-intro__content br {
+    display: inline;
+  }
+
+  .page-intro__content--photo {
+    margin-bottom: 33px;
+    padding: 0 33px;
+  }
+
+  .page-intro--form, .page-intro--photo {
+    padding-bottom: 38px;
+  }
+}
